@@ -1,15 +1,11 @@
+
 function Navbar() {
+
   return (
     <>
-      <header>
-        <a>Logo</a>
-        <nav>
-          <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
+      <header className="flex items-center justify-between">
+        <a className="text-xl font-bold sm:text-3xl">Argiel Ducut</a>
+        <p></p>
       </header>
     </>
   );
