@@ -6,7 +6,8 @@ This template provides a minimal setup to get React working in Vite with HMR and
 https://portfolio-blush-omega-47.vercel.app/
 
 ## Preview
-<img width="1333" height="676" alt="image" src="https://github.com/user-attachments/assets/43ae6d63-3cde-4a37-8fb1-3a4b5b110971" />
+<img width="1324" height="674" alt="image" src="https://github.com/user-attachments/assets/5f4edc00-cfa7-4c75-a7fc-d77b61c77730" />
+
 
 ## Features
 
