@@ -6,14 +6,16 @@ function Footer() {
           // Contact
         </h2>
         <div className="flex flex-col py-12 gap-4">
-          <h3 className="flex flex-col text-5xl font-dm-serif-display sm:text-7xl">
-            Let's build something{" "}
-            <span className="text-primary">Together.</span>
-          </h3>
-          <p className="after:content-[''] after:inline-block after:w-[3px] after:h-[1.1em] after:ml-.5 after:bg-current after:align-middle after:animate-blink">
-            Whether it's a new project, an opportunity, or just a conversation,
-            I'd love to hear from you
-          </p>
+          <div className="flex flex-col gap-12">
+            <h3 className="flex flex-col text-5xl font-dm-serif-display sm:text-7xl">
+              Let's build something{" "}
+              <span className="text-primary">Together.</span>
+            </h3>
+            <p className="after:content-[''] after:inline-block after:w-0.75 after:h-[1.1em] after:ml-.5 after:bg-current after:align-middle after:animate-blink">
+              Whether it's a new project, an opportunity, or just a
+              conversation, I'd love to hear from you
+            </p>
+          </div>
 
           <nav>
             <ul className="grid w-fit grid-cols-1 gap-3 sm:grid-cols-3">
