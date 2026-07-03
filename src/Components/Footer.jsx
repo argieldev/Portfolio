@@ -2,7 +2,9 @@ function Footer() {
   return (
     <>
       <footer className="flex flex-col gap-4">
-        <h2 className="text-lg sm:text-xl">Contact</h2>
+        <h2 className="text-sm text-subheader font-ibm-plex-mono sm:text-lg">
+          // Contact
+        </h2>
         <h3 className="text-md text-text-secondary sm:text-lg">
           Let's build something together.
         </h3>

@@ -2,7 +2,9 @@ function Projects() {
   return (
     <>
       <section className="flex flex-col gap-4">
-        <h2 className="text-md sm:text-xl">Projects</h2>
+        <h2 className="text-sm text-subheader font-ibm-plex-mono sm:text-lg">
+          // Projects
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Card */}
           <div className="flex flex-col px-2 py-4 gap-2 bg-surface border border-border rounded-md transition-colors .3s ease-in hover:bg-surface-hover">
