@@ -14,6 +14,28 @@ function Hero() {
               <span className="text-primary">with reliable</span> solutions
               while continuously learning and improving every day.
             </p>
+            <ul className="flex gap-4">
+              <li className="flex items-center px-4 py-2 gap-1 text-sm text-bg bg-primary border rounded-md transition-colors duration-50 ease-in cursor-pointer hover:bg-primary-hover sm:text-md">
+                View Work{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  color="#000000"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8924 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5"></path>
+                </svg>
+              </li>
+              <li className="text-sm px-4 py-2 border border-border rounded-md transition-colors duration-50 ease-in cursor-pointer hover:border-text-primary sm:textmd">
+                Get in Touch
+              </li>
+            </ul>
           </div>
 
           {/* Stacks */}

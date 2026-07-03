@@ -32,10 +32,10 @@ function About() {
                 <path d="M11.9922 4.00012V20.0001M19.9922 12.0001H3.99222"></path>
               </svg>
             </header>
-            <ul className="flex px-4 gap-4 text-md bg-tab-bar sm:lg">
-              <li className="py-1 ">Edit</li>
-              <li className="py-1 ">File</li>
-              <li className="py-1 ">View</li>
+            <ul className="flex px-4 gap-1 text-md bg-tab-bar sm:lg">
+              <li className="px-2 py-1 my-1 rounded-md hover:bg-tab-hover">Edit</li>
+              <li className="px-2 py-1 my-1 rounded-md hover:bg-tab-hover">File</li>
+              <li className="px-2 py-1 my-1 rounded-md hover:bg-tab-hover">View</li>
             </ul>
             <div className="px-2 py-4 text-center text-sm text-text-tertiary font-light bg-editor-bg sm:max-w-2xl sm:px-4 sm:py-8 sm:text-start sm:text-xl">
               {" "}
@@ -49,8 +49,12 @@ function About() {
                 gain real-world experience.
               </p>
               <div className="flex justify-between py-2 mx-4 text-sm text-text-tertiary bg-editor-bg border-t border-notepad-border">
-                <p className="text-[10px] font-ibm-plex-mono sm:text-sm">Ln 1, Col 1 UTF-8</p>
-                <p className="text-[10px] text-primary font-ibm-plex-mono sm:text-sm">Plain Text</p>
+                <p className="text-[10px] font-ibm-plex-mono sm:text-sm">
+                  Ln 1, Col 1 UTF-8
+                </p>
+                <p className="text-[10px] text-primary font-ibm-plex-mono sm:text-sm">
+                  Plain Text
+                </p>
               </div>
             </div>
           </div>
