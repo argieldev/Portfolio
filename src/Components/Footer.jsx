@@ -19,7 +19,7 @@ function Footer() {
               Let's build something{" "}
               <span className="text-primary">Together.</span>
             </h3>
-            <p className="after:content-[''] after:inline-block after:w-0.75 after:h-[1.1em] after:ml-.5 after:bg-current after:align-middle after:animate-blink">
+            <p className="text-sm after:content-[''] after:inline-block after:w-0.75 after:h-[1.1em] after:ml-.5 after:bg-current after:align-middle after:animate-blink sm:text-lg">
               Whether it's a new project, an opportunity, or just a
               conversation, I'd love to hear from you
             </p>
@@ -31,7 +31,7 @@ function Footer() {
             viewport={{ once: true }}
             transition={{ duration: .5, delay: .5 }}
           >
-            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+            <ul className="grid grid-cols-1 gap-3 sm:flex">
               <li>
                 <a className="flex items-center px-4 py-2 gap-2 border border-border rounded-md transition-colors duration-50 ease-in cursor-pointer hover:bg-surface-hover">
                   <svg
