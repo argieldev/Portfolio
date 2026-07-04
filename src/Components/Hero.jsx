@@ -6,9 +6,13 @@ function Hero() {
       <section className="flex flex-col px-6 py-12 gap-32" id="about">
         <div className="flex flex-col gap-12 sm:flex-row">
           <div className="flex flex-col gap-4">
-            <h2 className="text-sm text-primary font-semibold sm:text-lg">
-              Web Developer
+            <h2 className="flex flex-col text-sm font-semibold sm:text-lg">
+              <span className="text-[12px] text-text-muted font-ibm-plex-mono">—Role</span>
+              {" "}Web Developer
             </h2>
+            <h3 className="text-5xl font-dm-serif-display sm:text-6xl">
+              Argiel <span className="text-primary">Ducut</span>
+            </h3>
             <p className="text-center text-sm text-text-secondary font-light sm:max-w-sm sm:text-start sm:text-lg">
               I build clean, functional web applications by turning{" "}
               <span className="text-primary">ideas into reality</span>,
