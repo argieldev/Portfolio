@@ -1,5 +1,6 @@
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
+import Shelf from "./Components/Shelf";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
@@ -9,11 +10,12 @@ import A from "./Components/Vector/A.svg";
 function App() {
   return (
     <div className="relative overflow-hidden">
-      <div className="mx-auto max-w-4xl px-6 py-12 border-x border-border">
+      <div className="mx-auto max-w-4xl  py-12 border-x border-border">
         <Navbar />
 
         <main className="flex flex-col gap-20 py-12">
           <Hero />
+          <Shelf />
           <About />
           <Projects />
         </main>

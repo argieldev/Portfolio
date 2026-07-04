@@ -3,7 +3,7 @@ function Navbar() {
 
   return (
     <>
-      <header className="flex items-center justify-between">
+      <header className="flex items-center justify-between px-6">
         <a className="text-xl font-bold sm:text-3xl">Argiel Ducut</a>
         <div className="flex items-center p-2 gap-2 text-[10px] font-medium bg-surface border border-border rounded-md sm:text-sm sm:font-normal">
           <span className="w-2 h-2 bg-primary rounded-full"></span>

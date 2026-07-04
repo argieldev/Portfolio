@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <>
-      <section className="flex flex-col gap-32">
+      <section className="flex flex-col px-6 gap-32">
         <div className="flex flex-col gap-12 sm:flex-row">
           <div className="flex flex-col gap-4">
             <h2 className="text-sm text-primary font-semibold sm:text-lg">
@@ -89,28 +89,6 @@ function Hero() {
             </ul>
           </div>
         </div>
-
-        <ul className="grid grid-cols-1 border-t border-border sm:grid-cols-4">
-          <li className="flex flex-col gap-1 text-sm border-b border-border px-4 py-4 sm:text-md sm:border-r sm:border-b-0">
-            <span className="text-text-muted font-ibm-plex-mono">Based in</span>
-            <span>Philippines</span>
-          </li>
-
-          <li className="flex flex-col gap-1 text-sm border-b border-border px-4 py-4 sm:text-md sm:border-r sm:border-b-0">
-            <span className="text-text-muted font-ibm-plex-mono">Focus</span>
-            <span>Web Dev</span>
-          </li>
-
-          <li className="flex flex-col gap-1 text-sm border-b border-border px-4 py-4 sm:text-md sm:border-r sm:border-b-0">
-            <span className="text-text-muted font-ibm-plex-mono">Projects</span>
-            <span>-0</span>
-          </li>
-
-          <li className="flex flex-col gap-1 text-sm border-b border-border px-4 py-4 sm:text-md sm:border-b-0">
-            <span className="text-text-muted font-ibm-plex-mono">Status</span>
-            <span>Learning</span>
-          </li>
-        </ul>
       </section>
     </>
   );
