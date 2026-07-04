@@ -13,7 +13,7 @@ function App() {
       <div className="mx-auto max-w-4xl  py-12 border-x border-border">
         <Navbar />
 
-        <main className="flex flex-col gap-20 py-12">
+        <main className="flex flex-col gap-20">
           <Hero />
           <Shelf />
           <About />

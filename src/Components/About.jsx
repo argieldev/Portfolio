@@ -1,12 +1,21 @@
+import { motion } from "motion/react";
+
 function About() {
   return (
     <>
-      <section className="flex flex-col px-6 gap-4">
+      <section className="flex flex-col px-6 py-12 gap-4">
         <h2 className="text-sm text-subheader font-ibm-plex-mono sm:text-lg">
           // ABOUT
         </h2>
+        
         {/* Wrapper to center the notepad */}
-        <div className="flex flex-col items-center gap-4">
+        <motion.div
+          className="flex flex-col items-center gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: .5, delay: .5 }}
+        >
           <div className="w-fit flex flex-col bg-notepad-bg border border-notepad-border rounded-md">
             <header className="flex items-center gap-4 mx-4 ">
               <div className="flex gap-1">
@@ -33,9 +42,15 @@ function About() {
               </svg>
             </header>
             <ul className="flex px-4 gap-1 text-md bg-tab-bar sm:lg">
-              <li className="px-2 py-1 my-1 rounded-md hover:bg-tab-hover">Edit</li>
-              <li className="px-2 py-1 my-1 rounded-md hover:bg-tab-hover">File</li>
-              <li className="px-2 py-1 my-1 rounded-md hover:bg-tab-hover">View</li>
+              <li className="px-2 py-1 my-1 rounded-md hover:bg-tab-hover">
+                Edit
+              </li>
+              <li className="px-2 py-1 my-1 rounded-md hover:bg-tab-hover">
+                File
+              </li>
+              <li className="px-2 py-1 my-1 rounded-md hover:bg-tab-hover">
+                View
+              </li>
             </ul>
             <div className="px-2 py-4 text-center text-sm text-text-tertiary font-light bg-editor-bg sm:max-w-2xl sm:px-4 sm:py-8 sm:text-start sm:text-xl">
               {" "}
@@ -58,7 +73,7 @@ function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

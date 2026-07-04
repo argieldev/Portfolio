@@ -1,11 +1,19 @@
+import { motion } from "motion/react";
+
 function Footer() {
   return (
     <>
-      <footer className="flex flex-col px-6 gap-4">
+      <footer className="flex flex-col px-6 py-12 gap-4" id="contact">
         <h2 className="text-sm text-subheader font-ibm-plex-mono sm:text-lg">
           // Contact
         </h2>
-        <div className="flex flex-col py-12 gap-4">
+        <motion.div
+          className="flex flex-col gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
           <div className="flex flex-col gap-12">
             <h3 className="flex flex-col text-5xl font-dm-serif-display sm:text-7xl">
               Let's build something{" "}
@@ -17,8 +25,13 @@ function Footer() {
             </p>
           </div>
 
-          <nav>
-            <ul className="grid w-fit grid-cols-1 gap-3 sm:grid-cols-3">
+          <motion.nav
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: .5, delay: .5 }}
+          >
+            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               <li>
                 <a className="flex items-center px-4 py-2 gap-2 border border-border rounded-md transition-colors duration-50 ease-in cursor-pointer hover:bg-surface-hover">
                   <svg
@@ -86,8 +99,8 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </nav>
-        </div>
+          </motion.nav>
+        </motion.div>
       </footer>
     </>
   );

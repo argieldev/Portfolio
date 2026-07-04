@@ -1,8 +1,9 @@
+import { motion } from "motion/react";
 
 function Hero() {
   return (
     <>
-      <section className="flex flex-col px-6 gap-32">
+      <section className="flex flex-col px-6 py-12 gap-32" id="about">
         <div className="flex flex-col gap-12 sm:flex-row">
           <div className="flex flex-col gap-4">
             <h2 className="text-sm text-primary font-semibold sm:text-lg">
@@ -40,55 +41,68 @@ function Hero() {
           </div>
 
           {/* Stacks */}
-          <div className="rounded-md border border-vs-border bg-vs-bg px-2 py-4">
-            <header className="mb-2 text-sm text-vs-text-secondary">
-              Argiel &gt; Stack.css &gt; ...
-            </header>
+          <motion.div
+            variants={
+              {
+                hidden: { opacity: 0, y: 10 },
+                visible: { opacity: 1, y: 0 }
+              }
+            }
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: .5, delay: .25 }}
+          >
+            <div className="rounded-md border border-vs-border bg-vs-bg px-2 py-4">
+              <header className="mb-2 text-sm text-vs-text-secondary">
+                Argiel &gt; Stack.css &gt; ...
+              </header>
 
-            <ul className="space-y-1 px-4 font-mono text-sm">
-              <li className="flex gap-4">
-                <span className="w-4 text-vs-text-secondary">1</span>
+              <ul className="space-y-1 px-4 font-mono text-sm">
+                <li className="flex gap-4">
+                  <span className="w-4 text-vs-text-secondary">1</span>
 
-                <span className="text-vs-header">
-                  @theme <span className="text-vs">{`{`}</span>
-                </span>
-              </li>
+                  <span className="text-vs-header">
+                    @theme <span className="text-vs">{`{`}</span>
+                  </span>
+                </li>
 
-              <li className="flex gap-4">
-                <span className="w-4 text-vs-text-secondary">2</span>
+                <li className="flex gap-4">
+                  <span className="w-4 text-vs-text-secondary">2</span>
 
-                <span className="text-vs">
-                  <span className="text-vs-variable">--stack-frontend</span>:{" "}
-                  <span className="text-vs-accent">"React"</span>, JavaScript,
-                  CSS, HTML;
-                </span>
-              </li>
+                  <span className="text-vs">
+                    <span className="text-vs-variable">--stack-frontend</span>:{" "}
+                    <span className="text-vs-accent">"React"</span>, JavaScript,
+                    CSS, HTML;
+                  </span>
+                </li>
 
-              <li className="flex gap-4">
-                <span className="w-4 text-vs-text-secondary">3</span>
+                <li className="flex gap-4">
+                  <span className="w-4 text-vs-text-secondary">3</span>
 
-                <span className="text-vs">
-                  <span className="text-vs-variable">--stack-backend</span>:{" "}
-                  <span className="text-vs-accent">"Express.js"</span>, Node.js;
-                </span>
-              </li>
+                  <span className="text-vs">
+                    <span className="text-vs-variable">--stack-backend</span>:{" "}
+                    <span className="text-vs-accent">"Express.js"</span>,
+                    Node.js;
+                  </span>
+                </li>
 
-              <li className="flex gap-4">
-                <span className="w-4 text-vs-text-secondary">4</span>
+                <li className="flex gap-4">
+                  <span className="w-4 text-vs-text-secondary">4</span>
 
-                <span className="text-vs">
-                  <span className="text-vs-variable">--stack-database</span>:
-                  MongoDB, Firebase Firestore;
-                </span>
-              </li>
+                  <span className="text-vs">
+                    <span className="text-vs-variable">--stack-database</span>:
+                    MongoDB, Firebase Firestore;
+                  </span>
+                </li>
 
-              <li className="flex gap-4">
-                <span className="w-4 text-vs-text-secondary">5</span>
+                <li className="flex gap-4">
+                  <span className="w-4 text-vs-text-secondary">5</span>
 
-                <span className="text-vs">{`}`}</span>
-              </li>
-            </ul>
-          </div>
+                  <span className="text-vs">{`}`}</span>
+                </li>
+              </ul>
+            </div>
+          </motion.div>
         </div>
       </section>
     </>
