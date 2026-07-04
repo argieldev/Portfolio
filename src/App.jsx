@@ -10,7 +10,7 @@ import A from "./Components/Vector/A.svg";
 function App() {
   return (
     <div className="relative overflow-hidden">
-      <div className="mx-auto max-w-4xl  py-12 border-x border-border">
+      <div className="mx-auto max-w-4xl pt-12 border-x border-border">
         <Navbar />
 
         <main className="flex flex-col gap-20">
