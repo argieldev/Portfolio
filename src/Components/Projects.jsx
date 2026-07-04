@@ -5,7 +5,7 @@ function Projects() {
 
   return (
     <>
-      <section className="flex flex-col px-6 py-12 gap-4" id="project">
+      <section className="flex flex-col px-6 py-12 gap-4" id="projects">
         <h2 className="text-sm text-subheader font-ibm-plex-mono sm:text-lg">
           // Projects
         </h2>

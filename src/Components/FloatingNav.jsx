@@ -45,7 +45,7 @@ function FloatingNav() {
             <motion.li whileTap={{ scale: 0.95 }}>
               <a
                 className="group flex items-center justify-center p-1 gap-4 text-sm rounded-md cursor-pointer sm:text-md"
-                href="#project"
+                href="#projects"
               >
                 <span className="flex flex-1 justify-center bg-surface px-4 py-2 border border-border rounded-full transition-colors duration-300 ease-in group-hover:bg-surface-hover">
                   Project
